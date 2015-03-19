@@ -34,7 +34,7 @@ def article(url):
 def tags():
     site_Urls = common_reptile(HTTP % '/tagslist/all.html', r'<li class="js-tag-w">(.*?)</a>')
 
-    rfile = open(join(PREFIX, 'a.txt'), 'a+')
+    rfile = open(join(PREFIX, 'huxiu.txt'), 'a+')
 
     for u in site_Urls:
         articlestring = article(u.split('"')[1])
